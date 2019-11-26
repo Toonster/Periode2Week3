@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bord/Bord.iml" filepath="$PROJECT_DIR$/Bord/Bord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BordAbstract/BordAbstract.iml" filepath="$PROJECT_DIR$/BordAbstract/BordAbstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BordInterface/BordInterface.iml" filepath="$PROJECT_DIR$/BordInterface/BordInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BordInterfaceAbstract/BordInterfaceAbstract.iml" filepath="$PROJECT_DIR$/BordInterfaceAbstract/BordInterfaceAbstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dieren/Dieren.iml" filepath="$PROJECT_DIR$/Dieren/Dieren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Periode2Week3.iml" filepath="$PROJECT_DIR$/Periode2Week3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vermenigvuldigen/Vermenigvuldigen.iml" filepath="$PROJECT_DIR$/Vermenigvuldigen/Vermenigvuldigen.iml" />
+    </modules>
+  </component>
+</project>
