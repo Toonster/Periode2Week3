@@ -7,8 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/BordInterface/BordInterface.iml" filepath="$PROJECT_DIR$/BordInterface/BordInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/BordInterfaceAbstract/BordInterfaceAbstract.iml" filepath="$PROJECT_DIR$/BordInterfaceAbstract/BordInterfaceAbstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dieren/Dieren.iml" filepath="$PROJECT_DIR$/Dieren/Dieren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Film-Acteur/Film-Acteur.iml" filepath="$PROJECT_DIR$/Film-Acteur/Film-Acteur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maten/Maten.iml" filepath="$PROJECT_DIR$/Maten/Maten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PT/PT.iml" filepath="$PROJECT_DIR$/PT/PT.iml" />
       <module fileurl="file://$PROJECT_DIR$/Periode2Week3.iml" filepath="$PROJECT_DIR$/Periode2Week3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vermenigvuldigen/Vermenigvuldigen.iml" filepath="$PROJECT_DIR$/Vermenigvuldigen/Vermenigvuldigen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vermenigvuldigen(inner)/Vermenigvuldigen(inner).iml" filepath="$PROJECT_DIR$/Vermenigvuldigen(inner)/Vermenigvuldigen(inner).iml" />
     </modules>
   </component>
 </project>
