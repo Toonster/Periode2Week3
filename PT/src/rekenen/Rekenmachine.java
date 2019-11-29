@@ -3,6 +3,10 @@ package rekenen;
 import org.w3c.dom.ls.LSOutput;
 import rekenen.plugins.Plugin;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
 /**
  * PEER TUTORING
  * P2W3
@@ -11,9 +15,10 @@ public class Rekenmachine {
     private final int MAX_AANTAL_PLUGINS = 10;
     private Plugin[] ingeladenPlugins;
     private int aantalPlugins;
+    private StringBuilder logOfCalculations;
 
     public Rekenmachine() {
-        this.ingeladenPlugins = new Plugin[MAX_AANTAL_PLUGINS];
+        ingeladenPlugins = new Plugin[MAX_AANTAL_PLUGINS];
         aantalPlugins = 0;
     }
 
@@ -29,10 +34,10 @@ public class Rekenmachine {
 
     public double bereken(String command, double x, double y) {
         if (controleerBestaandePlugin(command)) {
-            Plugin plugin = getPluginViaCommando(command);
-            return plugin.bereken(x,y);
+            Plugin plugin = getPluginViaCommand(command);
+            return plugin.bereken(x, y);
         } else {
-            System.out.println("Het commando bestaat niet!");
+            System.out.printf("Plugin %s niet geinstalleerd!\n", command);
             return 0;
         }
     }
@@ -55,12 +60,27 @@ public class Rekenmachine {
         return false;
     }
 
-    public Plugin getPluginViaCommando(String commando) {
+    public Plugin getPluginViaCommand(String command) {
         for (int i = 0; i < aantalPlugins; i++) {
-            if (ingeladenPlugins[i].getCommand().equals(commando)) {
+            if (ingeladenPlugins[i].getCommand().equals(command)) {
                 return ingeladenPlugins[i];
             }
         }
         return null;
+    }
+
+    public void addCalcToLog (String berekeningAlsString) {
+        logOfCalculations.append(berekeningAlsString).append("\n");
+    }
+
+    public void addDateToLog() {
+        DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        logOfCalculations.append(myFormat.format(now));
+    }
+
+    public String getLog() {
+        logOfCalculations.append("==== LOG ====");
+        return logOfCalculations.toString();
     }
 }
